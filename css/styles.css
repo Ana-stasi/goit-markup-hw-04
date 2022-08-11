@@ -245,6 +245,7 @@ body{
     display: flex;
     height: 120px;
     margin-bottom: 30px;
+    border-radius: 4px;
     justify-content: center;
     align-items: center;
 
@@ -370,11 +371,11 @@ background-color: var(--grey-color);
 }
 
 .clients .link{
-    display: block;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
 
@@ -385,6 +386,11 @@ background-color: var(--grey-color);
 .clients .link:focus{
     color: var(--accent-color);
     border-color: var(--accent-color);
+}
+
+.clients .item {
+    width: 170px;
+    height: 92px;
 }
 
 .clients .item:not(:last-child){
@@ -503,7 +509,6 @@ background-color: var(--grey-color);
 
 .work-example .item{
     width: calc((100% - 2*30px)/3);
-    padding-bottom: 20px;
     border: 1px solid var(--card-border-color);
 
     background-color: var(--white-color);
