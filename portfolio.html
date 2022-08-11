@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,12 +33,20 @@
         </nav>
         <ul class="contact-nav list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="contact-icon" width="16px" height="12px">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link">
+              <svg class="contact-icon" width="10px" height="16px">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -195,22 +203,57 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo"
-          >Web<span class="accent">Studio</span></a
-        >
-        <address class="address">
-          <p class="footer-address">м. Київ, пр-т Лесі Українки, 26</p>
-          <ul class="contacts list">
-            <li class="item">
-              <a href="mailto:info@example.com" class="link">
-                info@example.com
-              </a>
-            </li>
-            <li class="item">
-              <a href="tel:+380991111111" class="link"> +38 099 111 11 11 </a>
-            </li>
-          </ul>
-        </address>
+        <div class="footer-container">
+          <div class="footer-nav">
+            <a href="./index.html" class="logo"
+              >Web<span class="accent">Studio</span></a
+            >
+            <address class="address">
+              <p class="footer-address">м. Київ, пр-т Лесі Українки, 26</p>
+              <ul class="contacts list">
+                <li class="item">
+                  <a href="mailto:info@example.com" class="link">
+                    info@example.com
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="tel:+380991111111" class="link">
+                    +38 099 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-net">
+            <p class="text">приєднуйтесь</p>
+            <ul class="social-networks list">
+              <li class="soc-net-item">
+                <a href="" class="link">
+                  <svg class="icon-social-network">
+                    <use href="./images/icons.svg#instagram"></use></svg
+                ></a>
+              </li>
+              <li class="soc-net-item">
+                <a href="" class="link"
+                  ><svg class="icon-social-network">
+                    <use href="./images/icons.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li class="soc-net-item">
+                <a href="" class="link"
+                  ><svg class="icon-social-network">
+                    <use href="./images/icons.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="soc-net-item">
+                <a href="" class="link"
+                  ><svg class="icon-social-network">
+                    <use href="./images/icons.svg#linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
